@@ -1,0 +1,15 @@
+def soma(* num):
+    s = 0
+    for c in num:
+        s += c
+    print(f'A soma dos valores {num} é de {s}')
+
+
+soma(15, 30, 45)
+
+
+# def contador(* num):
+#     print(f'A quantidade de números em {num} é {len(num)})
+
+
+# contador(1, 2, 3, 4, 5, 6)
