@@ -1,0 +1,30 @@
+def contador(inicio, fim, passo):
+    from time import sleep
+    if passo == 0:
+        passo = 1
+    if passo < 0:
+        passo = (passo * -1)
+    print('-=' * 20)
+    print(f'Contador de {inicio} até {fim} de {passo} em {passo}!')
+    print('-=' * 20)
+    if inicio < fim:
+        while inicio <= fim:
+            print(f'{inicio} ', end='')
+            inicio += passo
+            sleep(0.3)
+        print('FIM!')
+    elif inicio > fim:
+        while inicio >= fim:
+            print(f'{inicio} ', end='')
+            inicio -= passo
+            sleep(0.3)
+        print('FIM!')
+
+
+contador(1, 10, 1)
+contador(10, 0, 2)
+print('É sua vez de jogar!')
+inicio = int(input('Digite o início: '))
+fim = int(input('Digite o fim da contagem: '))
+passo = int(input('Digite o passo: '))
+contador(inicio, fim, passo)
