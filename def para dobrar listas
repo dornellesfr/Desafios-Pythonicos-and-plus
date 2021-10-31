@@ -1,0 +1,10 @@
+def dobra(lista):
+    pos = 0
+    while pos < (len(values)):
+        lista[pos] *= 2
+        pos += 1
+
+
+values = [3, 4, 6, 0, 12, 42]
+dobra(values)
+print(values)
