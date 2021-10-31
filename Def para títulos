@@ -1,0 +1,15 @@
+def linha():
+    print('\033[36m-\033[m' * 30)
+
+linha()
+print('Cadastro de funcionários')
+linha()
+name = 'Você falhou'
+
+def msg(mensagem):
+    print('\033[36m-\033[m' * 30)
+    print(f'\033[31m{mensagem:^30}\033[m')
+    print('\033[36m-\033[m' * 30)
+
+
+msg('HOJE TEM')
