@@ -1,0 +1,20 @@
+# Normalmente se usa args ou kwargs para preenchimento da funções, por definição mesmo, mas pode ser outro nome.
+def x(a, b, c, * args, ** kwargs): # Args = infitos preenchimentos em forma de tupla e Kwargs = Infinitos preenchimentos em forma de dicionário.
+    print(a, b, c, args, kwargs)
+
+
+x('A', 'B', 'C', 'D', 'E', z='Z', y='Y')
+
+
+def y(* args, ** kwargs):
+    print(args, kwargs)
+
+
+t = 'A', 'B', 'C'
+d = dict(z='Z', y='Y')
+
+y(*t, **d)
+# Pode-se inserir diretamente a tupla e o dicionários nos argumentos da def, de forma que seja preenchido conforme puder
+# Caso seja necessários o * pode remeter direto a tupla, mas necessário a adição do mesmo.
+# Os dicionários podem ser adicionados com ** para direto da função
+# Se caso essa ordem não for respeitada, eles entram juntos em forma de tupla e o dicionários fica vazio ao lado.
